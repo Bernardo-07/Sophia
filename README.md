@@ -1,4 +1,4 @@
-# 🙎‍♀️: Sophia
+# 🙎‍♀️ Sophia
 <p>Sophia is the new virtual assistant based on artificial intelligence and machine learning, whose name has a Greek origin and its meaning is related to wisdom and knowledge.</p>
 
 ## :computer: Technologies Used
@@ -10,6 +10,6 @@
 <p>✔️ There will be a functionality in the future</p>
 <p>✔️ ...</p>
 
-## 🎤: How it works
+## 🎤 How it works
 <p>...</p>
 
