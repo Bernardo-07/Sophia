@@ -1,13 +1,27 @@
 import speech_recognition as sr 
+import os
 
 #cria um reconhecedor
-r = sr.Recognizer()
+rec = sr.Recognizer()
 
 #abre e define o microfone como fonte de audio
-with sr.Microphone() as source:
-    #redução de ruido externo
-    r.adjust_for_ambient_noise(source)
+with sr.Microphone() as mic:
 
-    print('Say something: ')
-    audio = r.listen(source)
-    print(r.recognize_google(audio))
+    print('Diga alguma coisa: ')
+
+    while True:
+
+        #redução de ruido externo
+        rec.adjust_for_ambient_noise(mic)
+
+        audio = rec.listen(mic)
+
+        #transcreve o que foi dito
+        text = rec.recognize_google(audio, language='pt-BR')
+
+        if "navegador" in text:
+            os.system("start msedge.exe")
+
+        print(text)
+
+        
